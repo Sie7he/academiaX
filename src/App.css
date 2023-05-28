@@ -1,0 +1,23 @@
+.tarjeta {
+    @apply rounded-xl m-4 text-gray-700 text-xs mx-4 nm-flat-white overflow-hidden;
+}
+
+.button {
+    @apply text-sm font-bold py-1 px-4 rounded-full;
+}
+
+.button--gray {
+    @apply nm-flat-gray-100 hover:bg-gray-200;
+}
+
+.button--black {
+    @apply nm-flat-gray-700 text-white hover:bg-gray-800;
+}
+
+.label {
+    @apply block uppercase text-xs font-bold mb-6;
+}
+
+.input {
+    @apply nm-inset-gray-100 w-full border rounded-xl h-9 text-ellipsis p-2 focus:outline-none focus:bg-white focus:border-gray-500;
+}
