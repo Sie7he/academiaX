@@ -1,0 +1,10 @@
+{
+    "id": "1",
+    "detalles": "backend",
+    "periodo": "dia",
+    "eventos": 1,
+    "icono": "🏃",
+    "meta": 365,
+    "plazo": "2030-01-01",
+    "completado": 5
+}

@@ -1,13 +1,22 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import Meta from './Meta'
 import { Contexto } from '../../services/Memory'
+import { Outlet } from 'react-router';
+import { pedirMetas } from '../../services/Requests';
 
 
 
 function Lista() {
-    const metas = useContext(Contexto)
+  const [estado] = useContext(Contexto);
+
+
+
+    
     return (
-        metas.map(meta => <Meta key={meta.id} {...meta} />)
+        <>
+      {estado.orden.map(id => <Meta key={id} {...estado.objetos[id]} />)}
+      <Outlet />
+        </>
     )
 }
 
